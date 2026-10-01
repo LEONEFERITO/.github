@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="2184" viewBox="0 0 1760 2184">
+<rect width="1760" height="2184" fill="#F6EFE3"/>
+<text x="64" y="78" font-family="Noto Sans KR" font-size="14" font-weight="500" fill="#9A7A35">LEONEFERITO</text>
+<text x="64" y="122" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#2A1A12">페이지 주소 목록</text>
+<text x="64" y="156" font-family="Noto Sans KR" font-size="15" font-weight="400" fill="#5C524A">2026-10-01 코드 기준 · 화면 31개 · 모든 주소는 끝에 / 가 붙는다 (정적 호스팅)</text>
+<rect x="64" y="192" width="102" height="26" rx="13" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="74" y="210" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<rect x="178" y="192" width="116" height="26" rx="13" fill="#D5AE57" stroke="#D5AE57"/>
+<text x="188" y="210" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#2A1A12">빌드 때 서버</text>
+<rect x="306" y="192" width="88" height="26" rx="13" fill="none" stroke="#B8AC9C"/>
+<text x="316" y="210" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#5C524A">고정 문안</text>
+<rect x="406" y="192" width="88" height="26" rx="13" fill="none" stroke="#9A2B3A" stroke-dasharray="4 3"/>
+<text x="416" y="210" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#9A2B3A">아직 없음</text>
+<rect x="506" y="192" width="88" height="26" rx="13" fill="#E9E1D3" stroke="#E9E1D3"/>
+<text x="516" y="210" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#5C524A">서버 주소</text>
+<rect x="48" y="254" width="1664" height="36" fill="#2A1A12"/>
+<text x="64" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">번호</text>
+<text x="144" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">페이지</text>
+<text x="354" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">주소</text>
+<text x="744" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">붙는 값 · 들어오는 길</text>
+<text x="1144" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">데이터</text>
+<text x="1304" y="277" font-family="Noto Sans KR" font-size="13" font-weight="500" fill="#F6EFE3">비고</text>
+<text x="64" y="334" font-family="Noto Sans KR" font-size="18" font-weight="700" fill="#5A1A24">A. 공개 — 누구나</text>
+<line x1="48" y1="348" x2="1712" y2="348" stroke="#5A1A24" stroke-width="1.5"/>
+<text x="64" y="376" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-01</text>
+<text x="144" y="376" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">메인</text>
+<text x="354" y="376" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/</text>
+<rect x="1144" y="358" width="109" height="24" rx="12" fill="#D5AE57" stroke="#D5AE57"/>
+<text x="1153" y="375" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#2A1A12">빌드 때 서버</text>
+<text x="1304" y="376" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">추천 상품을 서버에서 받음</text>
+<line x1="48" y1="392" x2="1712" y2="392" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="392" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="420" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-02</text>
+<text x="144" y="420" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">제품 목록</text>
+<text x="354" y="420" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/products/</text>
+<rect x="1144" y="402" width="109" height="24" rx="12" fill="#D5AE57" stroke="#D5AE57"/>
+<text x="1153" y="419" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#2A1A12">빌드 때 서버</text>
+<text x="1304" y="420" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">필터: 라인·사이즈·핏·가격</text>
+<line x1="48" y1="436" x2="1712" y2="436" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="464" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-03</text>
+<text x="144" y="464" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">제품 상세</text>
+<text x="354" y="464" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/products/{상품주소}/</text>
+<rect x="1144" y="446" width="109" height="24" rx="12" fill="#D5AE57" stroke="#D5AE57"/>
+<text x="1153" y="463" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#2A1A12">빌드 때 서버</text>
+<text x="1304" y="464" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">담기·바로 구매는 실시간</text>
+<line x1="48" y1="480" x2="1712" y2="480" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="480" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="508" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-04</text>
+<text x="144" y="508" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">브랜드</text>
+<text x="354" y="508" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/brand/</text>
+<rect x="1144" y="490" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="507" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<line x1="48" y1="524" x2="1712" y2="524" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="552" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-05</text>
+<text x="144" y="552" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">룩북</text>
+<text x="354" y="552" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/lookbook/</text>
+<rect x="1144" y="534" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="551" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<line x1="48" y1="568" x2="1712" y2="568" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="568" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="596" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-06</text>
+<text x="144" y="596" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">이용 안내</text>
+<text x="354" y="596" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/guide/</text>
+<rect x="1144" y="578" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="595" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<text x="1304" y="596" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">핏·사이즈 읽는 법 · 일부 값 확인 중</text>
+<line x1="48" y1="612" x2="1712" y2="612" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="640" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-07</text>
+<text x="144" y="640" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">QnA</text>
+<text x="354" y="640" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/qna/</text>
+<rect x="1144" y="622" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="639" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<text x="1304" y="640" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">카카오톡 채널 ID 확인 중</text>
+<line x1="48" y1="656" x2="1712" y2="656" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="656" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="684" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-08</text>
+<text x="144" y="684" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">이용약관</text>
+<text x="354" y="684" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/terms/</text>
+<rect x="1144" y="666" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="683" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<text x="1304" y="684" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">시행일 확인 중</text>
+<line x1="48" y1="700" x2="1712" y2="700" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="728" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-09</text>
+<text x="144" y="728" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">개인정보처리방침</text>
+<text x="354" y="728" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/privacy/</text>
+<rect x="1144" y="710" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="727" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<text x="1304" y="728" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">보호책임자 확인 중</text>
+<line x1="48" y1="744" x2="1712" y2="744" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="744" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="772" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">A-10</text>
+<text x="144" y="772" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">404 안내</text>
+<text x="354" y="772" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">(없는 주소 전부)</text>
+<rect x="1144" y="754" width="83" height="24" rx="12" fill="none" stroke="#B8AC9C"/>
+<text x="1153" y="771" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">고정 문안</text>
+<text x="1304" y="772" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">제품 · 내 주문 · QnA 로 안내</text>
+<line x1="48" y1="788" x2="1712" y2="788" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="832" font-family="Noto Sans KR" font-size="18" font-weight="700" fill="#5A1A24">B. 회원</text>
+<line x1="48" y1="846" x2="1712" y2="846" stroke="#5A1A24" stroke-width="1.5"/>
+<text x="64" y="874" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">B-01</text>
+<text x="144" y="874" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">로그인</text>
+<text x="354" y="874" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/login/</text>
+<text x="744" y="874" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?next=돌아갈 주소</text>
+<rect x="1144" y="856" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="873" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="874" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">카카오·네이버는 키 받은 뒤 확인</text>
+<line x1="48" y1="890" x2="1712" y2="890" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="890" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="918" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">B-02</text>
+<text x="144" y="918" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">회원가입</text>
+<text x="354" y="918" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/signup/</text>
+<rect x="1144" y="900" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="917" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="918" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">약관·만 14세 체크</text>
+<line x1="48" y1="934" x2="1712" y2="934" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="962" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">B-03</text>
+<text x="144" y="962" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">비밀번호 찾기</text>
+<text x="354" y="962" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/find/</text>
+<rect x="1144" y="944" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="961" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="962" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">재설정 메일 발송</text>
+<line x1="48" y1="978" x2="1712" y2="978" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="978" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1006" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">B-04</text>
+<text x="144" y="1006" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">새 비밀번호</text>
+<text x="354" y="1006" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/reset/</text>
+<text x="744" y="1006" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">#token=…  (메일 링크로만)</text>
+<rect x="1144" y="988" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1005" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1006" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">30분 · 1회용</text>
+<line x1="48" y1="1022" x2="1712" y2="1022" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1066" font-family="Noto Sans KR" font-size="18" font-weight="700" fill="#5A1A24">C. 주문 · 마이페이지 — 로그인 필요</text>
+<line x1="48" y1="1080" x2="1712" y2="1080" stroke="#5A1A24" stroke-width="1.5"/>
+<text x="64" y="1108" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-01</text>
+<text x="144" y="1108" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">장바구니</text>
+<text x="354" y="1108" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/cart/</text>
+<rect x="1144" y="1090" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1107" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<line x1="48" y1="1124" x2="1712" y2="1124" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1124" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1152" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-02</text>
+<text x="144" y="1152" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">주문서</text>
+<text x="354" y="1152" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/checkout/</text>
+<text x="744" y="1152" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?items=장바구니 줄</text>
+<rect x="1144" y="1134" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1151" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1152" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">결제는 토스 키 필요</text>
+<line x1="48" y1="1168" x2="1712" y2="1168" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1196" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-03</text>
+<text x="144" y="1196" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">결제 완료</text>
+<text x="354" y="1196" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/order/success/</text>
+<text x="744" y="1196" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">토스가 보냄 (paymentKey·orderId·amount)</text>
+<rect x="1144" y="1178" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1195" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1196" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">여기서 결제 승인</text>
+<line x1="48" y1="1212" x2="1712" y2="1212" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1212" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1240" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-04</text>
+<text x="144" y="1240" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">결제 미완료</text>
+<text x="354" y="1240" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/order/fail/</text>
+<text x="744" y="1240" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">토스가 보냄 (code·message)</text>
+<rect x="1144" y="1222" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1239" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<line x1="48" y1="1256" x2="1712" y2="1256" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1284" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-05</text>
+<text x="144" y="1284" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">마이페이지</text>
+<text x="354" y="1284" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/mypage/</text>
+<rect x="1144" y="1266" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1283" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1284" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">주문 내역·정보 수정·비밀번호·탈퇴</text>
+<line x1="48" y1="1300" x2="1712" y2="1300" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1300" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1328" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-06</text>
+<text x="144" y="1328" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">주문 상세</text>
+<text x="354" y="1328" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/mypage/order/</text>
+<text x="744" y="1328" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?no=주문번호</text>
+<rect x="1144" y="1310" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1327" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1328" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">제작 전 취소 · 배송 조회 · 교환/반품 진행</text>
+<line x1="48" y1="1344" x2="1712" y2="1344" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1372" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">C-07</text>
+<text x="144" y="1372" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">교환·반품 신청</text>
+<text x="354" y="1372" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/mypage/return/</text>
+<text x="744" y="1372" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?no=주문번호</text>
+<rect x="1144" y="1354" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1371" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1372" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">배송 완료 후 · 사유별 기간</text>
+<line x1="48" y1="1388" x2="1712" y2="1388" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1432" font-family="Noto Sans KR" font-size="18" font-weight="700" fill="#5A1A24">D. 관리자 — 관리자 계정</text>
+<line x1="48" y1="1446" x2="1712" y2="1446" stroke="#5A1A24" stroke-width="1.5"/>
+<text x="64" y="1474" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-00</text>
+<text x="144" y="1474" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">관리자 첫 화면</text>
+<text x="354" y="1474" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/</text>
+<rect x="1144" y="1456" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1473" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1474" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">주문 관리로 이동 · 권한 없으면 안내</text>
+<line x1="48" y1="1490" x2="1712" y2="1490" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1490" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1518" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-01</text>
+<text x="144" y="1518" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">주문 관리</text>
+<text x="354" y="1518" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/orders/</text>
+<rect x="1144" y="1500" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1517" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1518" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">결제 완료가 먼저</text>
+<line x1="48" y1="1534" x2="1712" y2="1534" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1562" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-02</text>
+<text x="144" y="1562" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">주문 상세</text>
+<text x="354" y="1562" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/orders/detail/</text>
+<text x="744" y="1562" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?no=주문번호</text>
+<rect x="1144" y="1544" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1561" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1562" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">제작 시작·발송·배송 완료·취소</text>
+<line x1="48" y1="1578" x2="1712" y2="1578" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1578" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1606" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-03</text>
+<text x="144" y="1606" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">상품 관리</text>
+<text x="354" y="1606" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/products/</text>
+<rect x="1144" y="1588" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1605" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<line x1="48" y1="1622" x2="1712" y2="1622" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1650" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-04</text>
+<text x="144" y="1650" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">상품 등록</text>
+<text x="354" y="1650" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/products/new/</text>
+<rect x="1144" y="1632" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1649" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1650" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">공개 후 1~2분 뒤 사이트 반영</text>
+<line x1="48" y1="1666" x2="1712" y2="1666" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1666" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1694" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-05</text>
+<text x="144" y="1694" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">상품 수정</text>
+<text x="354" y="1694" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/products/edit/</text>
+<text x="744" y="1694" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?id=상품번호</text>
+<rect x="1144" y="1676" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1693" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<line x1="48" y1="1710" x2="1712" y2="1710" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1738" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-06</text>
+<text x="144" y="1738" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">회원 관리</text>
+<text x="354" y="1738" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/members/</text>
+<rect x="1144" y="1720" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1737" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<line x1="48" y1="1754" x2="1712" y2="1754" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1754" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1782" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-07</text>
+<text x="144" y="1782" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">회원 상세</text>
+<text x="354" y="1782" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/members/detail/</text>
+<text x="744" y="1782" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?id=회원번호</text>
+<rect x="1144" y="1764" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1781" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1782" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">관리자 지정은 최고관리자만</text>
+<line x1="48" y1="1798" x2="1712" y2="1798" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1826" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-08</text>
+<text x="144" y="1826" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">교환·반품 관리</text>
+<text x="354" y="1826" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/returns/</text>
+<rect x="1144" y="1808" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1825" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1826" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">처리할 것이 먼저</text>
+<line x1="48" y1="1842" x2="1712" y2="1842" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1842" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="1870" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">D-09</text>
+<text x="144" y="1870" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">교환·반품 상세</text>
+<text x="354" y="1870" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">/admin/returns/detail/</text>
+<text x="744" y="1870" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">?id=신청번호</text>
+<rect x="1144" y="1852" width="96" height="24" rx="12" fill="#5A1A24" stroke="#5A1A24"/>
+<text x="1153" y="1869" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#F6EFE3">서버 실시간</text>
+<text x="1304" y="1870" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">승인·회수·환불/재발송·거절</text>
+<line x1="48" y1="1886" x2="1712" y2="1886" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="1930" font-family="Noto Sans KR" font-size="18" font-weight="700" fill="#5A1A24">E. 서버 주소 — 화면 아님, 외부 콘솔 등록용</text>
+<line x1="48" y1="1944" x2="1712" y2="1944" stroke="#5A1A24" stroke-width="1.5"/>
+<text x="64" y="1972" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">E-01</text>
+<text x="144" y="1972" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">카카오 로그인 콜백</text>
+<text x="354" y="1972" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">{API}/login/oauth2/code/kakao</text>
+<text x="744" y="1972" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">카카오 개발자 콘솔에 등록</text>
+<rect x="1144" y="1954" width="83" height="24" rx="12" fill="#E9E1D3" stroke="#E9E1D3"/>
+<text x="1153" y="1971" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">서버 주소</text>
+<line x1="48" y1="1988" x2="1712" y2="1988" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="1988" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="2016" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">E-02</text>
+<text x="144" y="2016" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">네이버 로그인 콜백</text>
+<text x="354" y="2016" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">{API}/login/oauth2/code/naver</text>
+<text x="744" y="2016" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">네이버 개발자 센터에 등록</text>
+<rect x="1144" y="1998" width="83" height="24" rx="12" fill="#E9E1D3" stroke="#E9E1D3"/>
+<text x="1153" y="2015" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">서버 주소</text>
+<line x1="48" y1="2032" x2="1712" y2="2032" stroke="#DDD2C2" stroke-width="1"/>
+<text x="64" y="2060" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">E-03</text>
+<text x="144" y="2060" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">토스 웹훅</text>
+<text x="354" y="2060" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">{API}/api/payments/toss/webhook</text>
+<text x="744" y="2060" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">토스 개발자센터에 등록</text>
+<rect x="1144" y="2042" width="83" height="24" rx="12" fill="#E9E1D3" stroke="#E9E1D3"/>
+<text x="1153" y="2059" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">서버 주소</text>
+<text x="1304" y="2060" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">결제 상태를 한 번 더 맞춤</text>
+<line x1="48" y1="2076" x2="1712" y2="2076" stroke="#DDD2C2" stroke-width="1"/>
+<rect x="48" y="2076" width="1664" height="44" fill="#EFE7DA"/>
+<text x="64" y="2104" font-family="Roboto Mono" font-size="13" font-weight="400" fill="#8A7E72">E-04</text>
+<text x="144" y="2104" font-family="Noto Sans KR" font-size="15" font-weight="500" fill="#2A1A12">상품 이미지</text>
+<text x="354" y="2104" font-family="Roboto Mono" font-size="15" font-weight="500" fill="#5A1A24">{API}/media/…</text>
+<rect x="1144" y="2086" width="83" height="24" rx="12" fill="#E9E1D3" stroke="#E9E1D3"/>
+<text x="1153" y="2103" font-family="Noto Sans KR" font-size="12" font-weight="500" fill="#5C524A">서버 주소</text>
+<text x="1304" y="2104" font-family="Noto Sans KR" font-size="13" font-weight="400" fill="#5C524A">도메인 정해지면 확정</text>
+<line x1="48" y1="2120" x2="1712" y2="2120" stroke="#DDD2C2" stroke-width="1"/>
+</svg>
