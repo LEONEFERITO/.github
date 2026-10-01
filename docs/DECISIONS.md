@@ -443,3 +443,21 @@ Spring Session 쪽에 전달되지 않아 `SESSION; Path=/` 만 나갔다 → `S
 - 관리자 화면 입구에서 권한 확인(`app/admin/layout.tsx`) — **보안이 아니라 안내**다. 막는 건 서버(`/api/admin/**`).
 - `NEXT_PUBLIC_SITE_URL`(도메인)이 있으면 metadataBase · sitemap.xml 을 만든다. 오픈 전까지 robots.txt 전면 차단은 그대로.
 - 메인의 "교환·반품 안내 · 문의하기" 링크가 없는 주소(`/support`)였다 → `/qna/`.
+
+### 관리자 콘솔 마무리 (2026-10-01, 정재윤 "계획했던 어드민 화면들 다 만들어줘")
+
+| 화면 | 주소 | 서버 |
+| --- | --- | --- |
+| 관리자 로그인 (아이디 또는 이메일) | `/admin/login/` | `POST /api/auth/admin-login` — 관리자가 아니면 일반 실패와 같은 답, 세션 없음 |
+| 비밀번호 변경 (임시 비밀번호) | `/admin/password/` | 바꾸기 전에는 `/api/admin/**` 가 403 `PASSWORD_CHANGE_REQUIRED` (AdminPasswordGate) |
+| 대시보드 | `/admin/` | `GET /api/admin/dashboard` — 할 일 · 오늘/14일 매출(결제 − 환불, 서울 날짜) · 최근 결제 |
+| 사이즈별 판매 | `/admin/stats/` | `GET /api/admin/stats/sizes?days=` — 남은 수 = 판매 − 반품 − 교환 나감 + 교환 들어옴 |
+| 공지 | `/admin/notices/` · `/admin/notices/edit/?id=` · 손님 `/notice/` · `/notice/view/?id=` | V15 `notice` — 글자 그대로(HTML 없음) |
+| FAQ | `/admin/faqs/` · 손님 `/qna/` | V15 `faq` — 하나도 없으면 QnA 는 코드의 기본 질문 |
+| 메인 구성 · 진열 순서 | `/admin/display/` | `PUT /api/admin/products/order` — 공개 상품 전부를 보내야 저장(아니면 409 STALE_LIST) |
+
+**아이디 로그인 관리자(masteradmin)는 로컬 전용이다.** `create-admin --login-id --temp-password` 는 local 프로필에서만 받는다 —
+약한 임시 비밀번호로 만들고 첫 로그인 때 바꾸게 한다. 운영 관리자는 이메일 + 비밀번호 설정 링크 방식으로 만든다.
+
+메인 "배너" 는 따로 두지 않았다. 지금 메인 첫 화면은 이미지 배너가 아니라 공개 상품 앞 4개(분할 히어로)라,
+배너 관리 = 진열 순서다. `hero_config`(V2)는 쓰지 않는 무대형 히어로용으로 남아 있다.
