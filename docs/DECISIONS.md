@@ -497,3 +497,18 @@ Spring Session 쪽에 전달되지 않아 `SESSION; Path=/` 만 나갔다 → `S
 - 룩북 컷마다 실제로 입은 상품 slug (지금은 같은 라인 상품 · 분류 페이지로 대체)
 - 메인 히어로 액자 컷 · 라인 페이지 다섯 칸 · 브랜드 · 매장 사진 촬영본
 - 테스트용 단색 이미지("브라운 코튼 셔츠") 교체, 매장 지도 캡처 고해상도 교체
+
+
+## 2026-10-12 결정
+
+### Lightsail 배포 구성
+
+| 결정 | 이유 |
+| --- | --- |
+| 서버: Lightsail 서울, Ubuntu 24.04, 4 GB(월 $24), 자동 스냅샷 · 고정 IP. 계정은 대표님 명의, 작업은 IAM 사용자 `jaeyoon-dev`(Lightsail · EC2 · S3 · CloudFront · Route 53 · ACM · CloudWatch · Logs · SES · SNS, IAM · 결제 제외) | API + DB + 프론트 빌드가 한 대에서 2 GB 안팎. 2 GB 플랜은 빌드와 겹치면 모자란다 |
+| 손님 화면은 **같은 서버의 빌더(BE `deploy/front-builder`)** 가 FE 저장소를 빌드해 Caddy 가 서빙. 관리자 변경 뒤 재빌드는 API 의 기존 배포 훅(`FRONT_DEPLOY_HOOK_URL`)이 이 빌더를 부른다 | Vercel 배포 훅을 대신한다. 자바 코드는 바꾸지 않음(주소만 바뀜). 빌드가 실패하면 옛 릴리스가 남는다(릴리스 3개 보관, 링크 교체로 한 번에 전환) |
+| 빌드 때 상품 · 사진은 내부 주소(`API_BUILD_BASE=http://api:8080`)로 받는다. 브라우저가 부를 주소(`NEXT_PUBLIC_API_BASE`)와 분리 | 바깥 도메인을 돌지 않고, DNS · 인증서가 준비되기 전에도 첫 빌드가 된다 |
+| 도메인: `api.leoneferito.kr`(API) · `new.leoneferito.kr`(오픈 전 미리보기, 검색 차단) 지금 추가. 루트 · `www` 는 오픈 날 전환, `www` 는 루트로 보냄 | 카페24 몰이 운영 중이라 네임서버를 바꾸지 않고 A 레코드만. 미리보기도 같은 상위 도메인이라 로그인 쿠키가 붙는다 |
+| `MEDIA_BASE_URL` · `FRONT_BASE_URL` · `CORS_ALLOWED_ORIGINS` · 훅 주소는 compose 가 도메인으로 만든다(.env 에 적지 않음) | 두 군데 적으면 어긋난다. 오픈 날 바꿀 값이 `SITE_DOMAIN` · `SITE_ADDRESSES` · `SITE_ROBOTS` 셋으로 준다 |
+| 백업: `deploy/backup.sh`(DB 덤프 + 업로드 이미지, 매일 04:30, 14일) + Lightsail 자동 스냅샷 | 서버 안 백업과 서버 통째 백업을 둘 다. 서버 밖(S3) 사본은 오픈 뒤 |
+| Vercel 은 오픈 전 미리보기로만 남긴다 | 고객 확인용 주소(leoneferito.vercel.app)를 계속 쓴다. 로그인은 안 된다(다른 도메인) |
