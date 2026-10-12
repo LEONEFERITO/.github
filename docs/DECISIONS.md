@@ -512,3 +512,21 @@ Spring Session 쪽에 전달되지 않아 `SESSION; Path=/` 만 나갔다 → `S
 | `MEDIA_BASE_URL` · `FRONT_BASE_URL` · `CORS_ALLOWED_ORIGINS` · 훅 주소는 compose 가 도메인으로 만든다(.env 에 적지 않음) | 두 군데 적으면 어긋난다. 오픈 날 바꿀 값이 `SITE_DOMAIN` · `SITE_ADDRESSES` · `SITE_ROBOTS` 셋으로 준다 |
 | 백업: `deploy/backup.sh`(DB 덤프 + 업로드 이미지, 매일 04:30, 14일) + Lightsail 자동 스냅샷 | 서버 안 백업과 서버 통째 백업을 둘 다. 서버 밖(S3) 사본은 오픈 뒤 |
 | Vercel 은 오픈 전 미리보기로만 남긴다 | 고객 확인용 주소(leoneferito.vercel.app)를 계속 쓴다. 로그인은 안 된다(다른 도메인) |
+
+### 결제사 — 나이스페이 포스타트로 시작 (정재윤 "나이스포스타트로 우선 PG 시작하고 매출 오르면 나이스페이먼츠로 변경")
+
+| 결정 | 이유 |
+| --- | --- |
+| 결제사는 **나이스페이**. 포스타트(온라인 전자계약)로 시작하고, 매출이 늘면 같은 회사 일반 계약으로 옮긴다 | 포스타트와 일반 계약은 같은 API(`api.nicepay.co.kr/v1`) — 옮길 때 서버 키 세 줄만 바꾼다 |
+| 결제사를 `PaymentGateway` 하나로 묶고 `app.payment.provider`(PAYMENT_PROVIDER, 기본 nicepay)로 고른다. 토스 연동은 `toss` 로 남긴다 | 주문 · 취소 · 반품 환불 코드가 결제사를 모른다. 토스 테스트가 돈의 규칙(금액 대조 · 두 번 승인 방지 · 환불 먼저)을 계속 검증한다 |
+| **Server 승인 모델** — 결제창의 returnUrl 은 API(`POST /api/payments/nicepay/return`). 서명 `sha256(authToken+clientId+amount+secret)` 확인 → 저장된 금액으로 승인 → 화면 `/order/success/?orderNumber=` · `/order/fail/?code=&message=` 로 303 | 손님 화면은 정적 파일이라 POST 를 못 받는다. 결제창 복귀는 다른 사이트에서 오는 폼이라 로그인 쿠키가 없다 — 주문번호로 찾고, CSRF 대신 서명으로 막는다 |
+| 승인 응답이 끊기거나(시간 초과) 응답 서명이 틀리면 **망취소**(`/v1/payments/netcancel`) 후 실패 | 결제됐는지 모르는 채로 두면 손님 돈만 빠진다 — 나이스페이 안내 절차 |
+| 취소 · 환불의 나이스페이 orderId 는 취소마다 고유한 값(`cancel-{주문번호}` · `return-{신청 id}`) | 나이스페이는 취소마다 새 주문번호를 받고 같은 번호를 다시 받지 않는다 — 두 번 눌러도 환불은 한 번 |
+| 웹훅 `POST /api/payments/nicepay/webhook` — 서명 `sha256(tid+amount+ediDate+secret)` 이 맞을 때만 tid 로 다시 조회해 맞춘다. 답은 본문 `OK` | 토스 웹훅과 같은 원칙(본문을 믿지 않는다). OK 가 아니면 나이스페이가 다시 보낸다 |
+| 결제창 공개 키 · 결제사 이름은 화면이 `/api/orders/readiness` 로 받는다(빌드 변수 `NEXT_PUBLIC_TOSS_CLIENT_KEY` 제거) | 결제사 · 키를 바꿔도 화면을 다시 빌드하지 않는다 |
+| `NICEPAY_API_BASE` 기본값은 샌드박스 | 운영 키를 넣고 주소를 빠뜨리면 결제가 실패할 뿐 돈이 잘못 움직이지 않는다 |
+| 키는 대표님 상점에 개발자를 **멤버로 초대**해서 개발자가 직접 확인한다(happyjj407@naver.com) | 비밀 키를 메신저로 주고받지 않는다 |
+| 사이트 하단 호스팅 표기: Amazon Web Services (서울) | 전자상거래법 표시 · PG 심사 항목 |
+
+남은 것: 대표님 상점 개설 · 개발자 초대 → 테스트 상점 키로 결제창 끝까지 시험 → 심사(공개 상품 1개 이상 필요) → 운영 키.
+대표님용 가이드: `docs/guides/LEONEFERITO_나이스페이_포스타트_신청_가이드_대표님.pdf`
